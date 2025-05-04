@@ -1,4 +1,4 @@
-# 오답 코드
+# 1번째 코드(오답)
 def solution(s):
     words = []
     ans = []

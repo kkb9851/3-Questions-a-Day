@@ -1,22 +1,4 @@
 이 파이썬 코드는 **주어진 정수 배열 `arr`의 모든 원소의 최소공배수(LCM, Least Common Multiple)를 구하는 함수**입니다.
-
-### 코드 분석
-
-```python
-import math
-def solution(arr):
-    
-    while len(arr) >= 2:
-        a, b = arr[0], arr[1]
-        # 유클리드 호제법
-        arr.append((a*b) // math.gcd(a,b))  # a와 b의 최소공배수를 계산해서 배열에 추가
-        arr = arr[2:]  # 앞의 두 원소는 제거
-
-    return arr[0]  # 남은 한 개의 원소가 전체 배열의 LCM
-```
-
----
-
 ### 작동 방식 예시
 
 입력 배열: `[2, 7, 3]`

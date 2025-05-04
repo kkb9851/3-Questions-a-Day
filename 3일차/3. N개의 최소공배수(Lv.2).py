@@ -5,6 +5,7 @@ def solution(arr):
     
     while len(arr) >= 2:
         a, b = arr[0], arr[1]
+        # 유클리드 호제법
         arr.append((a*b) // math.gcd(a,b))
         arr = arr[2:]
         

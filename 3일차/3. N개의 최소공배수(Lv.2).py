@@ -1,4 +1,5 @@
 # 정답 코드
+# https://ror-coding.tistory.com/84
 import math
 def solution(arr):
     

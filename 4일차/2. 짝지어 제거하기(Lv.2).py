@@ -34,8 +34,8 @@ def solution(s):
     else:
         return 1
 
-  # 다른 사람의 풀이
-  def solution(s):
+# 다른 사람의 풀이
+def solution(s):
     stack = []
     for i in s:
         if len(stack) == 0:

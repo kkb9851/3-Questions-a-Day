@@ -25,5 +25,6 @@ def solution(s):
         a += 1
         num = s.count('1')
         b += len(s) - num
+        # bin 함수는 str을 반환 -> 문자열로 변환 안해도 됨
         s = bin(num)[2:]
     return [a, b]

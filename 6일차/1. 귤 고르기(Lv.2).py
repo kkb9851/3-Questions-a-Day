@@ -43,3 +43,14 @@ def solution(k, tangerine):
         if k <= r: # k보다 같거나 크면 종료
             break
     return answer
+
+# 더 효율적인 코드: Counter 사용
+from collections import Counter
+
+def solution(k, tangerine):
+    count = Counter(tangerine)              # 각 종류별 개수 세기 (O(n))
+    for i, freq in enumerate(sorted(count.values(), reverse=True)):  # 빈도 내림차순 정렬 (O(m log m))
+        k -= freq
+        if k <= 0:
+            return i + 1
+

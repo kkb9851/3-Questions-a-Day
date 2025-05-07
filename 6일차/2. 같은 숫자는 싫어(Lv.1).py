@@ -2,6 +2,7 @@
 def solution(arr):
     answer = []
     for i in arr:
+        # answer가 비어 있는 경우를 먼저 체크
         if not answer or i != answer[-1]:
             answer.append(i)
     return answer

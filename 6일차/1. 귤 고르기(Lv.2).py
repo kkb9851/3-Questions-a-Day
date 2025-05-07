@@ -45,12 +45,14 @@ def solution(k, tangerine):
     return answer
 
 # 더 효율적인 코드: Counter 사용
-from collections import Counter
-
+import collections
 def solution(k, tangerine):
-    count = Counter(tangerine)              # 각 종류별 개수 세기 (O(n))
-    for i, freq in enumerate(sorted(count.values(), reverse=True)):  # 빈도 내림차순 정렬 (O(m log m))
-        k -= freq
-        if k <= 0:
-            return i + 1
+    answer = 0
+    cnt = collections.Counter(tangerine)
 
+    for v in sorted(cnt.values(), reverse = True):
+        k -= v
+        answer += 1
+        if k <= 0:
+            break
+    return answer

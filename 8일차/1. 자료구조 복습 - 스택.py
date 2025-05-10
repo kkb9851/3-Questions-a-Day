@@ -2,9 +2,11 @@
 # 삽입: push, 삭제: pop
 # 스택 예제: 괄호 구조 판단, 괄호 계산 순서 결정, 스택으로 수열 만들기 등
 
+
 # 스택 기본 연산
 stack.append(data)  # push
 stack.pop()         # pop
+
 
 # 클래스 기반의 스택 구현
 class Stack:
